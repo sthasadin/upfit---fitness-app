@@ -1,23 +1,75 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Header from "./components/Header";
+import WeekSelector from "./components/WeekSelector/WeekSelector";
+import DayList from "./components/WeekSelector/DayList";
+import "./App.css";
+
+const weeks = [
+  {
+    id: 1,
+    days: [
+      {
+        id: 1,
+        name: "Monday",
+        exercises: [
+          {
+            id: 1,
+            name: "Treadmill 5mins (warmup)",
+            sets: [],
+          },
+          {
+            id: 2,
+            name: "Machine Leg Extension",
+            sets: [{ sets: 3, reps: 20, weight: 40 }],
+          },
+          {
+            id: 3,
+            name: "Machine Leg Curls",
+            sets: [{ sets: 3, reps: 20, weight: 80 }],
+          },
+          {
+            id: 4,
+            name: "Leg Press",
+            sets: [{ sets: 2, reps: 20, weight: 80 }],
+          },
+          {
+            id: 5,
+            name: "Goblet Squats",
+            sets: [{ sets: 2, reps: 20, weight: 80 }],
+          },
+          // ... add more exercises
+        ],
+      },
+      {
+        id: 2,
+        name: "Tuesday",
+        exercises: [
+          // ... add exercises for Tuesday
+        ],
+      },
+      // ... add more days
+    ],
+  },
+  {
+    id: 2,
+    days: [
+      // ... add days for week 2
+    ],
+  },
+  // ... add more weeks
+];
 
 function App() {
+  const [selectedWeek, setSelectedWeek] = useState(1);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <WeekSelector
+        selectedWeek={selectedWeek}
+        setSelectedWeek={setSelectedWeek}
+      />
+      <DayList selectedWeek={selectedWeek} weeks={weeks} />
     </div>
   );
 }

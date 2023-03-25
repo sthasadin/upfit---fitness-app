@@ -6,9 +6,9 @@ const WorkoutPlan = ({ workout }) => {
       <h2>{workout.name}</h2>
       <h3>Muscles worked: {workout.muscles}</h3>
       <ul>
-        {workout.exercises.map((exercises) => (
-          <li key={exercises.id}>
-            {exercise.name}- {exercise.reps} X{exercises.reps}
+        {workout.exercises.map((exercise) => (
+          <li key={exercise.id}>
+            {exercise.name}- {exercise.reps} X{exercise.reps}
           </li>
         ))}
       </ul>
