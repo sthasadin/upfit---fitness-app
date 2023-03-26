@@ -37,6 +37,26 @@ const weeks = [
             name: "Goblet Squats",
             sets: [{ sets: 2, reps: 20, weight: 80 }],
           },
+          {
+            id: 6,
+            name: "Calves",
+            sets: [{ sets: 3, reps: 20, weight: "-" }],
+          },
+          {
+            id: 7,
+            name: "Smith Machine But Bridge",
+            sets: [{ sets: 3, reps: 20, weight: "-" }],
+          },
+          {
+            id: 8,
+            name: "Treadmill (5 mins)",
+            sets: [],
+          },
+          {
+            id: 9,
+            name: "Streaching & Cool down",
+            sets: [],
+          },
           // ... add more exercises
         ],
       },
