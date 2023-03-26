@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "../WeekSelector/exercise.css";
 
 function Exercise({ day, selectedWeek, database }) {
   const [exercises, setExercises] = useState([]);
@@ -15,7 +16,7 @@ function Exercise({ day, selectedWeek, database }) {
   }, [day, selectedWeek, database]);
 
   return (
-    <div>
+    <div className="exerciseWrapper">
       <h2>{day}</h2>
       <ul>
         {exercises.map((exercise) => (

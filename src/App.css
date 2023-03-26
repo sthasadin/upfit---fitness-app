@@ -1,0 +1,49 @@
+.dayWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  width: 40%;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  background-color: #f4ffff;
+  color: #00080b;
+  border: 0.5px solid #00080b;
+}
+@media (max-width: 700px) {
+  .dayWrapper {
+    width: 100%;
+  }
+}
+
+.weekSelectWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  width: 40%;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  background-color: #042a33;
+  border: 1px solid #dbdfe2;
+  color: #e0e6e6;
+}
+.headerWrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #e0e6e6;
+  width: 100%;
+}
+.logoName {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e0e6e6;
+}
+.dayText {
+  text-decoration: underline #2af092;
+  color: #f03268;
+}
+h3 {
+  text-decoration: ;
+}

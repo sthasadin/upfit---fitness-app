@@ -64,6 +64,48 @@ const weeks = [
         id: 2,
         name: "Tuesday",
         exercises: [
+          {
+            id: 1,
+            name: "Treadmill (5 mins)",
+            sets: [],
+          },
+          {
+            id: 2,
+            name: "Floor Push Up",
+            sets: [{ sets: 2, reps: 15, weight: "-" }],
+          },
+          {
+            id: 2,
+            name: "Incline Chest Press",
+            sets: [{ sets: 3, reps: 20, weight: "20" }],
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "Wednesday",
+        exercises: [
+          // ... add exercises for Tuesday
+        ],
+      },
+      {
+        id: 4,
+        name: "Thrusday",
+        exercises: [
+          // ... add exercises for Tuesday
+        ],
+      },
+      {
+        id: 5,
+        name: "Friday",
+        exercises: [
+          // ... add exercises for Tuesday
+        ],
+      },
+      {
+        id: 6,
+        name: "Saturday",
+        exercises: [
           // ... add exercises for Tuesday
         ],
       },
