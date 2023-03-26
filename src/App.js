@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Header from "./components/Header";
+// import Header from "./components/Header";
 import WeekSelector from "./components/WeekSelector/WeekSelector";
 import DayList from "./components/WeekSelector/DayList";
 import "./App.css";
@@ -126,7 +126,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
       <WeekSelector
         selectedWeek={selectedWeek}
         setSelectedWeek={setSelectedWeek}

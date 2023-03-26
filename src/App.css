@@ -4,16 +4,11 @@
   margin: 0 auto;
   align-items: center;
   width: 40%;
-  border-radius: 30px;
+  border-radius: 15px;
   margin-bottom: 10px;
   background-color: #f4ffff;
   color: #00080b;
   border: 0.5px solid #00080b;
-}
-@media (max-width: 700px) {
-  .dayWrapper {
-    width: 100%;
-  }
 }
 
 .weekSelectWrapper {
@@ -22,7 +17,7 @@
   margin: 0 auto;
   align-items: center;
   width: 40%;
-  border-radius: 20px;
+  border-radius: 15px;
   margin-bottom: 10px;
   background-color: #042a33;
   border: 1px solid #dbdfe2;
@@ -45,5 +40,20 @@
   color: #f03268;
 }
 h3 {
-  text-decoration: ;
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .dayWrapper {
+    width: 100%;
+  }
+  .headerWrap {
+    width: 100%;
+  }
+  .weekSelectWrapper {
+    width: 100%;
+  }
+  .week-selector {
+    width: 100%;
+  }
 }
