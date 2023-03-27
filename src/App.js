@@ -14,7 +14,7 @@ const weeks = [
         exercises: [
           {
             id: 1,
-            name: "Treadmill 5mins (warmup)",
+            name: "Treadmill 7mins (warmup)",
             sets: [],
           },
           {
