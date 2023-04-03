@@ -62,7 +62,7 @@ const weeks = [
       },
       {
         id: 2,
-        name: "Tuesday",
+        name: "Tuesday Chest workout",
         exercises: [
           {
             id: 1,
